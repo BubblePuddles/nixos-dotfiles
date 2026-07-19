@@ -10,13 +10,14 @@
 
   outputs = { self, nixpkgs, ... }:
     let
-      lib = nixpkgs.lib;
-    in {
+      inherit (nixpkgs) lib;
+#      lib = nixpkgs.lib;
+      in {
     nixosConfigurations = {
       logdog-nixos = lib.nixosSystem {
         system = "x86_64-linux";
 	modules = [ ./configuration.nix ];
-      };
+			      };
     };
   };
 }
