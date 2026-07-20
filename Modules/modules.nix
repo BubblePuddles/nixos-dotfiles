@@ -9,6 +9,8 @@
     ./packages.nix
     ./services.nix
     ./shell.nix
+    ./desktop.nix
+    ./vr.nix
   ];
 
 }

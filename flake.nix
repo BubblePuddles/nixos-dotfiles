@@ -12,9 +12,11 @@
           inputs.nixpkgs.follows = "nixpkgs";
         };
 
+    nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
+
   };
 
-  outputs = { self, nixpkgs, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-xr, ... }@inputs:
     let
       inherit (nixpkgs) lib;
 #      lib = nixpkgs.lib;
@@ -23,7 +25,10 @@
         logdog-nixos = lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
-        modules = [ ./configuration.nix ];
+        modules = [
+          ./configuration.nix
+          nixpkgs-xr.nixosModules.nixpkgs-xr
+        ];
 			      };
     };
   };
