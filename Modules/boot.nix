@@ -6,11 +6,12 @@
       canTouchEfiVariables = true;
     };
 
-    grub = {
+    limine = {
       enable = true;
-      efiSupport = true;
-      device = "nodev";
+      efisupport = true;
+      maxGenerations = 30;
     };
+
   };
 
 
