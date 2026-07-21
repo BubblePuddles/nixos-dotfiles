@@ -8,7 +8,7 @@
 
     limine = {
       enable = true;
-      efisupport = true;
+      efiSupport = true;
       maxGenerations = 30;
     };
 
