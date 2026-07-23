@@ -37,6 +37,10 @@ hardware.nvidia = {
   programs.gamemode.enable = true;
 
   services.flatpak.enable = true;
+  xdg.portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  };
 
 
 

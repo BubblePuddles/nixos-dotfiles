@@ -3,6 +3,7 @@
   environment.systemPackages = [
     pkgs.xrizer
     pkgs.wayvr
+    pkgs.bs-manager
   ];
 
 
