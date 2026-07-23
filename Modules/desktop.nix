@@ -42,6 +42,7 @@ hardware.nvidia = {
     pkgs.glfw3-minecraft
     pkgs.ydotool
   ];
+  programs.ydotool.enable = true;
 
 
 
