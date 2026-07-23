@@ -23,7 +23,6 @@
   prismlauncher
   vrcx
   yazi
-  bs-manager
   r2modman
   ];
 
