@@ -40,6 +40,7 @@ hardware.nvidia = {
 
   environment.systemPackages = [
     pkgs.glfw3-minecraft
+    pkgs.ydotool
   ];
 
 
