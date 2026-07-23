@@ -21,6 +21,10 @@
   tmux
   inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
   prismlauncher
+  vrcx
+  yazi
+  bs-manager
+  r2modman
   ];
 
 
