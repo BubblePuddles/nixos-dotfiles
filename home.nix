@@ -71,6 +71,17 @@
     # EDITOR = "emacs";
   };
 
+
+
+  programs.fish = {
+    enable = true;
+    shellAliases = {
+      ll = "ls -l";
+      la = "ls -la";
+      please = "sudo";
+    };
+  };
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
