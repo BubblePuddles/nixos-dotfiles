@@ -9,7 +9,7 @@
 
 
     home-manager = {
-      url = "github:nix-community/home-manager/release-26.05";
+      url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -27,7 +27,7 @@
     let
       system = "x86_64-linux";
       inherit (nixpkgs) lib;
-      pkgs = nixpkgs.legacyPackages.${system}
+      pkgs = nixpkgs.legacyPackages.${system};
 #      lib = nixpkgs.lib;
       in {
     nixosConfigurations = {
@@ -41,7 +41,7 @@
 			  };
       };
 
-    homeConfiguartions = {
+    homeConfigurations = {
       logdog = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [
