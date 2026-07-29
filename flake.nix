@@ -45,7 +45,7 @@
       logdog = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [
-          ./home.nix
+          ./Home/home.nix
         ];
 			};
     };

@@ -24,6 +24,10 @@
   vrcx
   yazi
   r2modman
+  (discord.override {
+    withVencord = true;
+    withOpenASAR = true;
+  })
   ];
 
 

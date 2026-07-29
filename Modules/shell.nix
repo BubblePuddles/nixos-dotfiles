@@ -1,7 +1,7 @@
 { input, pkgs, ... }: {
-  programs.bash.enable = false;
-  programs.fish.enable = true;
+
   users.defaultUserShell = pkgs.fish;
+  programs.fish.enable = true;
 
   environment.systemPackages = with pkgs; [
     fishPlugins.done

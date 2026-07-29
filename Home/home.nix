@@ -1,10 +1,11 @@
-{ config, pkgs, ... }:
+{ config, pkgs, ... }: {
 
-{
-  # Home Manager needs a bit of information about you and the paths it should
-  # manage.
   home.username = "logdog";
   home.homeDirectory = "/home/logdog";
+
+  imports = [
+    ./configs.nix
+  ];
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
@@ -15,11 +16,9 @@
   # release notes.
   home.stateVersion = "26.05"; # Please read the comment before changing.
 
-  # The home.packages option allows you to install Nix packages into your
-  # environment.
+
   home.packages = [
-    # # Adds the 'hello' command to your environment. It prints a friendly
-    # # "Hello, world!" when run.
+
     pkgs.hello
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
@@ -71,16 +70,6 @@
     # EDITOR = "emacs";
   };
 
-
-
-  programs.fish = {
-    enable = true;
-    shellAliases = {
-      ll = "ls -l";
-      la = "ls -la";
-      please = "sudo";
-    };
-  };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
