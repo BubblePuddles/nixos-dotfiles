@@ -12,11 +12,13 @@
           };
         };
         display = {
+          separator = "  ";
           size = {
-            binaryPrefix = "si";
+            ndigits = 0;
+            maxPrefix = "MB";
           };
-          color = "blue";
-          separator = "  ";
+          color = "magenta";
+          key = "icon";
         };
         modules = [
           {

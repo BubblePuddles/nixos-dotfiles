@@ -2,9 +2,11 @@
 
   programs.git = {
     enable = true;
-    userName = "BubblesPuddle";
-    userEmail = "logan.baker7562@gmail.com";
+
+
     settings = {
+      user.Name = "BubblesPuddle";
+      user.Email = "logan.baker7562@gmail.com";
       init.defaultBranch = "main";
     };
 
