@@ -4,7 +4,7 @@
     enable = true;
     userName = "BubblesPuddle";
     userEmail = "logan.baker7562@gmail.com";
-    extraConfig = {
+    settings = {
       init.defaultBranch = "main";
     };
 
