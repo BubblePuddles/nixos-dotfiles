@@ -36,7 +36,6 @@ hardware.nvidia = {
 
   programs.gamemode.enable = true;
 
-  services.flatpak.enable = true;
 
   environment.systemPackages = [
     pkgs.glfw3-minecraft
