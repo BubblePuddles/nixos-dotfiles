@@ -5,7 +5,7 @@
     ./fish.nix
     ./git.nix
     ./packages.nix
-
+    ./zed-editor.nix
   ];
 
 
