@@ -24,6 +24,7 @@
   inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
   prismlauncher
   vrcx
+  xclicker
   yazi
   r2modman
   (discord.override {
