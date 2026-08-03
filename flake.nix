@@ -1,6 +1,6 @@
 {
 
-  description = "My first flake!";
+  description = "Logdog's Flake";
 
   inputs = {
     nixpkgs = {
@@ -15,15 +15,21 @@
 
 
     zen-browser = {
-          url = "github:youwen5/zen-browser-flake";
-          inputs.nixpkgs.follows = "nixpkgs";
-        };
+      url = "github:youwen5/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    plasma-manager = {
+      url = "github:nix-community/plasma-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
+    };
 
     nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
 
   };
 
-  outputs = { self, nixpkgs, nixpkgs-xr, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-xr, home-manager, plasma-manager, ... }@inputs:
     let
       system = "x86_64-linux";
       inherit (nixpkgs) lib;
@@ -45,6 +51,7 @@
       logdog = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [
+          inputs.plasma-manager.homeModules.plasma-manager
           ./Home/home.nix
         ];
 			};

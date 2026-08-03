@@ -1,5 +1,6 @@
 { config, pkgs, ... }: {
   imports = [
+    ./kde.nix
     ./alacritty.nix
     ./fastfetch.nix
     ./fish.nix
