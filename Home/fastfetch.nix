@@ -32,12 +32,14 @@
             };
           }
           "os"
-          "kernel"
-          "terminal"
-          "shell"
+          "cpu"
+          "gpu"
           "memory"
-          "packages"
           "uptime"
+          "terminal"
+          "terminalfont"
+          "shell"
+          "packages"
           {
             type = "colors";
             key = "Colors";
