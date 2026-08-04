@@ -21,6 +21,41 @@
 
       };
 
+      fonts = {
+        fixedWidth = {
+          family = "Mononoki Nerd Font Mono";
+          pointSize = 12;
+        };
+
+        general = {
+          family = "Mononoki Nerd Font";
+          pointSize = 12;
+        };
+
+        menu = {
+          family = "Mononoki Nerd Font";
+          pointSize = 12;
+        };
+
+        small  = {
+          family = "Mononoki Nerd Font";
+          pointSize = 10;
+        };
+
+        toolbar = {
+          family = "Mononoki Nerd Font";
+          pointSize = 12;
+        };
+
+        windowTitle = {
+          family = "Mononoki Nerd Font";
+          pointSize = 12;
+        };
+      };
+
+      krunner = {
+        position = "center";
+      };
 
   };
 }
