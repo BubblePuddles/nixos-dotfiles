@@ -4,6 +4,13 @@
     programs.plasma = {
       enable = true;
 
+      workspace = {
+        wallpaper = ./Assets/beyond-light.jpg;
+      };
+
+
+
+
       # System Settings > Keyboard > Shortcuts > Plasma Manager
       hotkeys.commands = {
 
