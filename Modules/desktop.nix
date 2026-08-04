@@ -27,7 +27,9 @@
 
 services.xserver.videoDrivers = ["nvidia"];
 hardware.nvidia = {
-  enabled = true;
+  package = config.boot.kernelPackages.nvidiaPackages.bleeding_edge;
+  modesetting.enable = true;
+  open = false;
   nvidiaSettings = true;
 };
 
