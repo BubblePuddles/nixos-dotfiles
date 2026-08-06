@@ -12,7 +12,6 @@
 
     #  thunderbird
     ];
-    # openssh.authorizedKeys.keys = [ "ssh-dss AAAAB3Nza... logdog@foobar" ];
   };
 
 
