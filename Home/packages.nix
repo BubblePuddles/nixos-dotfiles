@@ -6,6 +6,8 @@
     pkgs.nerd-fonts.mononoki
     pkgs.nerd-fonts.iosevka
     pkgs.nerd-fonts.jetbrains-mono
+    pkgs.kde-gruvbox
+    pkgs.bibata-cursors
 
 
 
