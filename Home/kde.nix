@@ -5,6 +5,10 @@
       enable = true;
 
       workspace = {
+      # lookAndFeel = "org.kde.breezedark.desktop";
+        colorScheme = "Gruvbox";
+      #  cursor.theme = "Bibata-Modern-Ice";
+      # iconTheme = "Papirus-Dark";'
         wallpaper = ./Assets/beyond-light.jpg;
       };
 
@@ -12,6 +16,7 @@
 
 
       # System Settings > Keyboard > Shortcuts > Plasma Manager
+      # Check for conflicting keybinds
       hotkeys.commands = {
 
         launch-alacritty = {
@@ -25,7 +30,6 @@
           key = "Meta+B";
           command = "zen";
         };
-
       };
 
       fonts = {
