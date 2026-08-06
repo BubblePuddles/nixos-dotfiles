@@ -1,7 +1,7 @@
 { config, pkgs, ... }: {
 
   boot.loader = {
-    timeout = 8;
+    timeout = 7;
     efi = {
       canTouchEfiVariables = true;
     };
@@ -9,7 +9,7 @@
     limine = {
       enable = true;
       efiSupport = true;
-      maxGenerations = 30;
+      maxGenerations = 25;
     };
 
   };
