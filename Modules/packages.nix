@@ -15,6 +15,7 @@
   wget
   curl
   git
+  glfw3-minecraft
   fastfetch
   alacritty
   tldr
